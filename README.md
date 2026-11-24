@@ -20,9 +20,9 @@
 3. Open `http://localhost:3000/login`
 
 ## Default Seeded Accounts (Created Automatically on First DB Connect)
-- **Super Admin:** `admin@nextorbit.in` / `Admin@123`
-- **Sales Manager:** `manager@nextorbit.in` / `Bde@123`
-- **BDE Executive:** `bde@nextorbit.in` / `Bde@123`
+<!-- - **Super Admin:** `admin@nextorbit.in` / `Admin@123` -->
+<!-- - **Sales Manager:** `manager@nextorbit.in` / `Bde@123` -->
+<!-- - **BDE Executive:** `bde@nextorbit.in` / `Bde@123` -->
 
 ## Admin API Setup
 Log in as **Super Admin** and open **API Vault (`/admin/integrations`)** to securely add, toggle, quota-limit, and live-test keys for:
