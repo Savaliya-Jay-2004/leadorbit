@@ -6,8 +6,8 @@ import { Orbit, Lock, Mail, AlertCircle, CheckCircle2, ArrowRight } from 'lucide
 
 export default function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('admin@nextorbit.in');
-  const [password, setPassword] = useState('Admin@123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [dbStatus, setDbStatus] = useState<'checking' | 'connected' | 'disconnected'>('checking');
@@ -103,7 +103,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500"
-                placeholder="admin@nextorbit.in"
+                placeholder="Enter your email address"
               />
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500"
-                placeholder="••••••••"
+                placeholder="Enter your password"
               />
             </div>
           </div>
