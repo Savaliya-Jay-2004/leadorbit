@@ -55,7 +55,7 @@ export default function LoginPage() {
         </div>
 
         {/* MongoDB Connection Indicator */}
-        <div
+        {/* <div
           className={`flex items-center gap-2.5 px-4 py-2.5 rounded-xl border text-xs ${
             dbStatus === 'connected'
               ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-300'
@@ -80,7 +80,7 @@ export default function LoginPage() {
           ) : (
             <span>Checking MongoDB connection...</span>
           )}
-        </div>
+        </div> */}
 
         <form
           onSubmit={handleSubmit}
@@ -134,9 +134,9 @@ export default function LoginPage() {
 
           {/* Quick Role Fill */}
           <div className="pt-3 border-t border-slate-800/80">
-            <p className="text-[11px] text-slate-400 mb-2">Quick Fill Default Accounts:</p>
+            {/* <p className="text-[11px] text-slate-400 mb-2">Quick Fill Default Accounts:</p> */}
             <div className="grid grid-cols-3 gap-2">
-              <button
+              {/* <button
                 type="button"
                 onClick={() => {
                   setEmail('admin@nextorbit.in');
@@ -145,8 +145,8 @@ export default function LoginPage() {
                 className="px-2 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-[11px] text-indigo-300 font-medium"
               >
                 Super Admin
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 type="button"
                 onClick={() => {
                   setEmail('manager@nextorbit.in');
@@ -155,8 +155,8 @@ export default function LoginPage() {
                 className="px-2 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-[11px] text-cyan-300 font-medium"
               >
                 Sales Mgr
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 type="button"
                 onClick={() => {
                   setEmail('bde@nextorbit.in');
@@ -165,7 +165,7 @@ export default function LoginPage() {
                 className="px-2 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-[11px] text-emerald-300 font-medium"
               >
                 BDE Exec
-              </button>
+              </button> */}
             </div>
           </div>
         </form>
